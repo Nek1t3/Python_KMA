@@ -1,8 +1,15 @@
-
+from app.io.input import consoleInput, fileInput, pandasInput
+from app.io.output import consoleOutput, fileOutput
 
 def main():
-    pass
+    consoleOutput(consoleInput())
+    fileOutput(consoleInput())
 
+    consoleOutput(fileInput())
+    fileOutput(fileInput())
 
-if __name__ == '__main__':
+    consoleOutput(pandasInput())
+    fileOutput(pandasInput())
+
+if __name__ == "__main__":
     main()
